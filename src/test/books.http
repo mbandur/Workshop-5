@@ -1,0 +1,33 @@
+### Get all book
+GET http://localhost:8080/books
+
+### Get book
+GET http://localhost:8080/books/1
+
+### Add book
+POST http://localhost:8080/books
+Content-Type: application/json
+
+{
+ "isbn":"3422"
+,"title":"Thiniking in Java"
+,"author":"Bruce Eckel"
+,"publisher":"Helion"
+,"type":"programming"
+}
+
+### Update book
+PUT http://localhost:8080/books
+Content-Type: application/json
+
+{
+"id":1
+,"isbn":"3222"
+,"title":"Thiniking in C#"
+,"author":"Bruce Eckel"
+,"publisher":"IT Books"
+,"type":"programming"
+}
+
+### Delete book
+DELETE http://localhost:8080/books/1
